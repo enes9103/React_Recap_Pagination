@@ -13,7 +13,7 @@ const Followers = () => {
   const totalPagesNum = Math.ceil(followersList.length / followersPerPage)
   const getFollowers = async () => {
     const { data } = await axios.get(
-      "https://api.github.com/users/zeyasar/followers?per_page=100"
+      "https://api.github.com/users/enes9103/followers?per_page=100"
     );
     setFollowersList(data);
     console.log(data);
